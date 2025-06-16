@@ -19,7 +19,7 @@ ssh-keygen -t ed25519 -C "yallashellesty@gmail.com"
 cat ~/.ssh/id_ed25519.pub
 
 * Added the public key to GitHub:
-- GitHub > Settings > SSH and GPG keys > New SSH key
-- Pasted the key content
+->GitHub > Settings > SSH and GPG keys > New SSH key
+->Pasted the key content
 
 Now I can push to GitHub without using a token every time.
