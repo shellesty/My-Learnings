@@ -10,15 +10,15 @@ I recommend using SSH because:
 
 I followed below steps:
 
-1. Generated an SSH key:
+* Generated an SSH key:
 
 ssh-keygen -t ed25519 -C "yallashellesty@gmail.com"
 
-2. Copied the public key:
+* Copied the public key:
 
 cat ~/.ssh/id_ed25519.pub
 
-3. Added the public key to GitHub:
+* Added the public key to GitHub:
 - GitHub > Settings > SSH and GPG keys > New SSH key
 - Pasted the key content
 
