@@ -10,16 +10,16 @@ I recommend using SSH because:
 
 I followed below steps:
 
-* Generated an SSH key:
+**Generated an SSH key:**
 
 ssh-keygen -t ed25519 -C "yallashellesty@gmail.com"
 
-* Copied the public key:
+**Copied the public key:**
 
 cat ~/.ssh/id_ed25519.pub
 
-* Added the public key to GitHub:
-->GitHub > Settings > SSH and GPG keys > New SSH key
-->Pasted the key content
+**Added the public key to GitHub:**
+- GitHub > Settings > SSH and GPG keys > New SSH key
+- Pasted the key content
 
 Now I can push to GitHub without using a token every time.
