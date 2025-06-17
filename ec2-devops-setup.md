@@ -6,7 +6,7 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 ## Tools Installed and Their Purpose
 
 ### 1. Docker
-Docker is used for containerizing applications, making them portable and environment-independent.  
+`Docker` is used for containerizing applications, making them portable and environment-independent.  
 **What I did**:
 - Installed Docker Engine and Docker Compose.
 - Verified the installation with `docker run hello-world`.
@@ -19,7 +19,7 @@ Docker is used for containerizing applications, making them portable and environ
 - Verified it using `kubectl version`.
 
 ### 3. Terraform
-Terraform enables Infrastructure as Code (IaC), allowing repeatable and version-controlled infrastructure provisioning.  
+`Terraform` enables Infrastructure as Code (IaC), allowing repeatable and version-controlled infrastructure provisioning.  
 **What I did**:
 - Added the official HashiCorp repository and GPG key.
 - Installed and verified Terraform using `terraform --version`.
