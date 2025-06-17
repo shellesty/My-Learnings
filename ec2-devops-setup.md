@@ -3,8 +3,6 @@
 ## Objective
 I deployed a full-stack containerized application on an AWS EC2 instance, installed key DevOps tools (Docker, kubectl, Terraform), and enabled public access through proper security group configuration. This exercise gave me hands-on experience with cloud provisioning, container orchestration, and infrastructure preparation for automation.
 
----
-
 ## Tools Installed and Their Purpose
 
 ### 1. Docker
@@ -25,8 +23,6 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 **What I did**:
 - Added the official HashiCorp repository and GPG key.
 - Installed and verified Terraform using `terraform --version`.
-
----
 
 ## Application Deployment Process
 
@@ -56,8 +52,6 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 
 - Opened the application in a browser using:
 
----
-
 ### Key Learnings
 
 - Tools like Docker, kubectl, and Terraform must be installed directly inside the EC2 instance to manage applications and infrastructure.
@@ -66,8 +60,6 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 - EC2 root volumes can be resized dynamically using standard Linux tools without downtime.
 - Reviewing and modifying `.env` and `docker-compose.yml` files is crucial to understand service architecture.
 - This setup lays the foundation for advanced topics like Kubernetes deployment, infrastructure automation, and CI/CD.
-
----
 
 ### Outcome
 
