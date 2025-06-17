@@ -26,7 +26,7 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 
 ## Application Deployment Process
 
-### 1. Connected to and Prepared the EC2 Instance
+### Connected to and Prepared the EC2 Instance
 - Launched an EC2 instance (**t3.large**) running Ubuntu.
 - Connected using SSH and a `.pem` key.
 - The default 8 GB volume was expanded to **30 GB** using:
@@ -34,23 +34,23 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
   - `resize2fs` to expand the filesystem
 - Verified the expansion using `df -h` and `lsblk`.
 
-### 2. Cloned the Project Repository
+### Cloned the Project Repository
 - Cloned the `ultimate-devops-project-demo` repository from GitHub.
 - Reviewed `.env` and `docker-compose.yml` files to understand port mappings and service behavior.
 
-### 3. Ran the Application
+### Ran the Application
 - Launched all services using:
   ```bash
   docker compose up -d
   
-### 4. Configured Network Access
+### Configured Network Access
 
 - Modified the EC2 Security Group to allow inbound traffic on port 8080.
 - Verified that the frontend service was mapped correctly to this port.
 
-### 5. Accessed the Application
+### Accessed the Application
 
-- Opened the application in a browser using:
+- Opened the application in a browser using: http://<EC2-Public-IP>:8080(port)
 
 ### Key Learnings
 
