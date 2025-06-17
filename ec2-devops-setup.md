@@ -7,26 +7,23 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
 
 ### 1. Docker
 `Docker` is used for containerizing applications, making them portable and environment-independent.  
-**What I did**:
 - Installed Docker Engine and Docker Compose.
 - Verified the installation with `docker run hello-world`.
 - Used `docker compose up -d` to run a multi-container application stack.
 
 ### 2. kubectl
 `kubectl` is the CLI tool for interacting with Kubernetes clusters. It's essential for managing deployments, pods, and other Kubernetes resources.  
-**What I did**:
 - Installed the latest version of `kubectl`.
 - Verified it using `kubectl version`.
 
 ### 3. Terraform
 `Terraform` enables Infrastructure as Code (IaC), allowing repeatable and version-controlled infrastructure provisioning.  
-**What I did**:
 - Added the official HashiCorp repository and GPG key.
 - Installed and verified Terraform using `terraform --version`.
 
 ## Application Deployment Process
 
-### Connected to and Prepared the EC2 Instance
+Connected to and Prepared the EC2 Instance
 - Launched an EC2 instance (**t3.large**) running Ubuntu.
 - Connected using SSH and a `.pem` key.
 - The default 8 GB volume was expanded to **30 GB** using:
@@ -34,21 +31,21 @@ I deployed a full-stack containerized application on an AWS EC2 instance, instal
   - `resize2fs` to expand the filesystem
 - Verified the expansion using `df -h` and `lsblk`.
 
-### Cloned the Project Repository
+Cloned the Project Repository
 - Cloned the `ultimate-devops-project-demo` repository from GitHub.
 - Reviewed `.env` and `docker-compose.yml` files to understand port mappings and service behavior.
 
-### Ran the Application
+Ran the Application
 - Launched all services using:
   ```bash
   docker compose up -d
   
-### Configured Network Access
+Configured Network Access
 
 - Modified the EC2 Security Group to allow inbound traffic on port 8080.
 - Verified that the frontend service was mapped correctly to this port.
 
-### Accessed the Application
+Accessed the Application
 
 - Opened the application in a browser using: http://<EC2-Public-IP>:8080(port)
 
